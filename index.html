@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--В подальшому вказано російську мову при кожній фразі-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--Верхня лінія. Шапка(на макеті шапка ще перша секція, в мене лише перша лінія). Логотип. Загальна навігація. Контакти. Відображається на кожній сторінці-->
+    <header class="header">
+       <div class="container">
+            <a class="logo l-header" href="https://halyna-bilozir.github.io/goit-markup-hw-03/index.html">
+                <span class="logo accent">Web</span><span class="logo l-header">Studio</span>
+            </a>
+            <nav class="nav-links">
+                <ul class="nav-pages">
+                    <li class="nav-pages-list">
+                        <a href="" lang="ru" class="nav-links-studio">Студия</a>
+                    </li>
+                    <li class="nav-pages-list">
+                        <a href="https://halyna-bilozir.github.io/goit-markup-hw-03/portfolio.html" lang="ru" class="nav-links-portfolio">Портфолио</a>
+                    </li>
+                    <li class="nav-pages-list">
+                        <a href="" lang="ru" class="nav-links-contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="contact">
+                <li class="contact-list"><a href="emailto:info@devstudio.com" class="contact-mail">info@devstudio.com</a></li>
+                <li class="contact-list"><a href="tel:+380961111111" class="contact-tel">+38 096 111 11 11</a></li>
+            </ul>
+        </div>
+    </header>  
+    <!--Вся унікальна інформація на сторінці-->
+    <main>
+        <!--Секція, в якій можна замовити послугу-->
+        <section class="hero">
+            <div>
+                <h1 class="hero-header" lang="ru">Эффективные решения<br/> для вашего бизнеса</h1>
+                <button class="hero-button" lang="ru" type="button">Заказать услугу</button>
+            </div>
+        </section>
+
+        <!--Секція перечислення переваг без вказування головного заголовку-->
+        <section class="benefits">
+           <div class="container">
+                <h2 class="benefits-hidden" visiable hidden lang="ru">Преимущества</h2>
+                <ul class="benefits-list">
+                    <li>
+                        <h3 class="benefits-header" lang="ru">Внимание к деталям</h3>
+                        <p class="benefits-text" lang="ru">
+                            Идейные соображения, а также начало повседневной работы по формированию позиции.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="benefits-header" lang="ru">Пунктуальность</h3>
+                        <p class="benefits-text" lang="ru">
+                            Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="benefits-header" lang="ru">Планирование</h3>
+                        <p class="benefits-text" lang="ru">
+                            Равным образом консультация с широким активом в значительной степени обуславливает.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="benefits-header" lang="ru">Современные технологии</h3>
+                        <p class="benefits-text" lang="ru">
+                            Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                        </p>
+                    </li>
+                </ul>
+           </div>
+        </section>
+
+        <!--Сфера діяльності-->
+        <section class="sphere">
+            <div class="container">
+                <h2 class="sphere-header" lang="ru">Чем мы занимаемся</h2>
+                <ul class="sphere-list">
+                    <li><a href=""><img class="sphere-image" src="./images/image01.jpg" alt="Рабочая среда для програмирования"></a></li>
+                    <li><a href=""><img class="sphere-image" src="./images/image02.jpg" alt="Макет смартфона на екране ноутбука"></a></li>
+                    <li><a href=""><img class="sphere-image" src="./images/image03.jpg" alt="Шестигранник разних цветов на планшете"></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Команда. Фото професіоналів, основна інформація-->
+        <section class="team">
+           <div class="container">
+                <h2 class="team-header" lang="ru">Наша команда</h2>
+                <ul class="team-list">
+                    <li class="team-item">
+                        <!--Обернула все в лінк, щоб переходило по ссилці і по фото і по підпису-->
+                        <a  class="team-item-link" href="">
+                            <img class="team-image" src="./images/photo01.jpg" alt="Портрет мужчины-дизайнера в бордовой рубашке">
+                            <div class="team-underimage">
+                                <h3 class="team-header-photo" lang="ru">Игорь Демьяненко</h3>
+                                <p class="team-text">Product Designer</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="team-item">
+                        <a  class="team-item-link" href="">
+                            <img class="team-image" src="./images/photo02.jpg" alt="Портрет женщины разработчика в черном пиджаке">
+                            <div class="team-underimage">
+                                <h3 class="team-header-photo" lang="ru">Ольга Репина</h3>
+                                <p class="team-text">Frontend Developer</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="team-item">
+                        <a class="team-item-link" href="">
+                            <img class="team-image" src="./images/photo03.jpg" alt="Портрет мужчины - маркетолога в голубой рубашке">
+                            <div class="team-underimage">
+                                <h3 class="team-header-photo" lang="ru">Николай Тарасов</h3>
+                                <p class="team-text">Marketing</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="team-item">
+                        <a class="team-item-link" href="">
+                            <img class="team-image" src="./images/photo04.jpg" alt="Портрет мужчины - дизайнера в черной футболке">
+                            <div class="team-underimage">
+                                <h3 class="team-header-photo" lang="ru">Михаил Ермаков</h3>
+                                <p class="team-text">UI Designer</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+           </div>
+        </section>
+
+    </main>
+
+    <!--Підвал, де вказана адреса і контакти. Відображається на кожній сторінці-->
+    <footer class="footer">
+       <div class="container">
+            <div class="footer-address-block">
+                <a class="logo common-footer" href="https://halyna-bilozir.github.io/goit-markup-hw-02/index.html">
+                    <span class="logo accent">Web</span><span class="logo common-footer">Studio</span>
+                </a>
+                <address class="footer-address" lang="ru">
+                    г. Киев, пр-т Леси Украинки, 26
+                </address>
+                <address>
+                    <a class="footer-address-contact" href="mailto:info@example.com">info@example.com</a>
+                    <a class="footer-address-contact" href="tel:+380991111111">+38 099 111 11 11</a>
+                </address>
+            </div>
+       </div>
+    </footer>
+</body>
+</html>
