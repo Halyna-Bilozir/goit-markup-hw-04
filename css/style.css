@@ -3,6 +3,7 @@
     --primary-backgroud-color:#FFFFFF;
     --secondary-backgroud-color: #2F303A;
     --team-background-color: #F5F4FA;
+    --hero-background-color: rgba(47, 48, 58, 0.4);
 
     --accent-color: #2196F3;
 
@@ -132,12 +133,26 @@ header {
 /* Оформлення унікальної інформації сторінки Студія*/
 
 /*Оформлення секції героя. Секція, в якій можна замовити послугу*/
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--hero-background-color);
+    background-image: linear-gradient(to right,
+        var(--hero-background-color),
+        var(--hero-background-color)
+        ), url(../images/Img-hero.jpg),
+        url(../images/ImgOverlay.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .hero {
     text-align: center;
     letter-spacing: 0.06em;
 
     color: var(--primary-backgroud-color);
-    background-color: var(--secondary-backgroud-color);
     padding-top: 200px;
     padding-bottom: 200px;
 }
