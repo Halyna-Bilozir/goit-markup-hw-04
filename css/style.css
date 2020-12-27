@@ -137,6 +137,10 @@ header {
 .contact-icon {
     margin-right: 10px;
 }
+.contact-text {
+    display: inline-flex;
+    align-content: center;
+}
 /* Оформлення унікальної інформації сторінки Студія*/
 
 /*Оформлення секції героя. Секція, в якій можна замовити послугу*/
