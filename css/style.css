@@ -350,15 +350,19 @@ header {
     width: 44px;
     height: 44px;
 
-    /*background-color: var(--primary-backgroud-color);*/
+    background-color: var(--primary-backgroud-color);
     color: var(--icon-color);
-    background-color: red;
     border-radius: 50%;
 }
 .team-icon {
     width: 20px;
     height: 20px;
     fill: currentColor;
+}
+.team-social-link:hover,
+.team-social-link:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-backgroud-color);
 }
 
 /* Оформлення підвалу, переплітається з хедером*/
