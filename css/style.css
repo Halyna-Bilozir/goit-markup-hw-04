@@ -15,6 +15,7 @@
     --portfolio-border-color: #EEEEEE;
 
     --icon-color: #AFB1B8;
+    --bg-footer-icon:rgba(255, 255, 255, 0.1);
 }
 
 /*Забираємо точки в списках і підкреслення ссилок*/
@@ -405,7 +406,7 @@ header {
 }
 .clients-links:hover,
 .clients-links:focus {
-    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
     color: var(--primary-backgroud-color);
 }
 /* Оформлення підвалу, переплітається з хедером*/
@@ -416,6 +417,9 @@ header {
     padding-bottom: 60px;
 
     background-color: var(--secondary-backgroud-color);
+}
+.footer.container {
+    display: flex;
 }
 .logo .common-footer {
     color: var(--primary-backgroud-color);
@@ -428,12 +432,59 @@ address {
     padding: 0px;
     margin-top: 20px;
 }
+.footer-address-block {
+    margin-right: 70px;
+}
 .footer-address-contact { 
     color: rgba(255, 255, 255, 0.6);
     display: block;
     margin-top: 9px;
 }
+.footer-join {
+    padding-top: 72px;
+    padding-bottom: 100px;
+    padding-left: 0px;
+}
+.join-header {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
 
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+    color: var(--primary-backgroud-color);
+}
+.footer-social-links {
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+}
+.footer-social-links>li:not(:last-child) {
+    margin-right: 10px;
+}
+.footer-social-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    
+    background-color: var(--bg-footer-icon);
+    color: var(--primary-backgroud-color);
+    border-radius: 50%;
+}
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--accent-color);
+}
 /*Оформлення другої сторінки Portfolio*/
 .main-portfolio {
     background-color: var(--primary-backgroud-color);
