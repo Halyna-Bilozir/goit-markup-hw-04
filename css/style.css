@@ -109,6 +109,7 @@ header {
 }
 .contact-tel,
 .contact-mail {
+    align-items: center;
     color: var(--primary-text-color);
 }
 .nav-pages {
