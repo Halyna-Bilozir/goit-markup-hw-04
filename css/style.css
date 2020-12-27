@@ -401,8 +401,6 @@ header {
     border-radius: 4px;
 }
 .clients-icon {
-    width: 20px;
-    height: 20px;
     fill: currentColor;
 }
 .clients-links:hover,
