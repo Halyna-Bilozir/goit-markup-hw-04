@@ -137,10 +137,6 @@ header {
 .contact-icon {
     margin-right: 10px;
 }
-.contact-text {
-    display: inline-flex;
-    align-content: center;
-}
 /* Оформлення унікальної інформації сторінки Студія*/
 
 /*Оформлення секції героя. Секція, в якій можна замовити послугу*/
@@ -333,7 +329,25 @@ header {
     margin-bottom: 10px;
 }
 .team-text {
+    margin-bottom: 16px;
     color: var(--primary-text-color);
+}
+.team-social-links {
+    display: inline-flex;
+}
+.team-social-links>li:not(:last-child) {
+    margin-right: 10px;
+}
+.team-social-link {
+    width: 44px;
+    height: 44px;
+
+    background-color: var(--primary-backgroud-color);
+    border-radius: 50%;
+}
+.team-icon {
+    width: 20px;
+    height: 20px;
 }
 
 /* Оформлення підвалу, переплітається з хедером*/
