@@ -130,6 +130,9 @@ header {
 .contact-list {
     display: block;
 }
+.contact-icon {
+    margin-right: 10px;
+}
 /* Оформлення унікальної інформації сторінки Студія*/
 
 /*Оформлення секції героя. Секція, в якій можна замовити послугу*/
@@ -184,6 +187,13 @@ header {
 }
 
 /*Оформлення секції переваг*/
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
 .benefits {
     font-size: 14px;
     padding-top: 94px;
@@ -205,8 +215,11 @@ header {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
+
     width: 270px;
     height: 120px;
+
     background:var(--team-background-color);
     border-radius: 4px;
 }
