@@ -112,7 +112,7 @@ header {
 .nav-pages {
     display: flex;
     padding-left: 0;
-    margin-right: 331px;
+    margin-right: 305px;
 }
 .nav-pages>li:not(:last-child) {
     margin-right: 50px;
