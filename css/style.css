@@ -193,13 +193,13 @@ header {
 }
 
 /*Оформлення секції переваг*/
-.visually-hidden {
+/*.visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
-}
+}*/
 .benefits {
     font-size: 14px;
     padding-top: 94px;
@@ -312,9 +312,6 @@ header {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: var(--primary-backgroud-color);
 }
-/*.team-item-link {
-    display: block;
-}*/
 .team-image {
     display: block;
     width: 270px;
@@ -365,6 +362,54 @@ header {
     color: var(--primary-backgroud-color);
 }
 
+/* Оформлення списку постійних клієнтів*/
+.clients {
+    margin-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--primary-backgroud-color);
+}
+.clients-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    color: var(--secondary-text-color);
+
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.clients-list {
+    padding-left: 0px;
+    display: flex;
+}
+.clients-list>li:not(:last-child) {
+    margin-right: 30px;
+}
+.clients-links {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 90px;
+
+    color: var(--icon-color);
+    background-color: var(--primary-backgroud-color);
+    border: 1px solid var(--icon-color);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.clients-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+.clients-links:hover,
+.clients-links:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-backgroud-color);
+}
 /* Оформлення підвалу, переплітається з хедером*/
 .footer {
     font-size: 14px;
