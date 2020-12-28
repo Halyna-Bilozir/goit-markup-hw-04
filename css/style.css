@@ -105,13 +105,20 @@ header {
     color: var(--secondary-text-color);
 }
 .nav-links-studio:hover, 
+.nav-links-portfolio:hover, 
+.nav-links-contacts:hover,
 .contact-mail:hover,
+.contact-tel:hover,
 .nav-links-studio:focus, 
-.contact-mail:focus {
+.nav-links-portfolio:focus, 
+.nav-links-contacts:focus,
+.contact-mail:focus,
+.contact-tel:focus {
     color: var(--accent-color);
 }
 .contact-tel,
 .contact-mail {
+    display: inline-flex;
     align-items: center;
     color: var(--primary-text-color);
 }
@@ -533,6 +540,7 @@ button {
 .list-button-main {
     color: var(--primary-backgroud-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .list-button-main,
 .list-button-secondary {
@@ -549,7 +557,14 @@ button {
 .list-button-secondary {
     background: var(--team-background-color);
 }
-
+.list-button-secondary:hover,
+.list-button-secondary:focus {
+    color: var(--primary-backgroud-color);
+    background-color: var(--accent-color);
+}
+.list-button-secondary:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 .list-button-secondary, 
 .image-header {
     color: var(--secondary-text-color);
@@ -569,6 +584,11 @@ button {
     border: 1px solid var( --portfolio-border-color);
     box-sizing: border-box;
     width: 370px;
+}
+.image-item:hover,
+.image-item:focus {
+    border: 1px solid var(--accent-color);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .image-size {
     width: 368px;
