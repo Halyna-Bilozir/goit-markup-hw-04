@@ -514,7 +514,9 @@ address {
    color: var(--secondary-text-color);
 }
 .nav-links-pportfolio:hover, 
-.nav-links-pportfolio:focus {
+.nav-links-pportfolio:focus,
+.nav-links-sstudio:hover, 
+.nav-links-sstudio:focus {
     color: var(--accent-color);
 }
 /* Оформлення фільтру*/
